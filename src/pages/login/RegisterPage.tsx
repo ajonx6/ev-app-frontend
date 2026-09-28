@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import LoginForm from "../../components/forms/LoginForm";
+import RegisterForm from "../../components/forms/RegisterForm";
 
-function LoginPage() {
+function RegisterPage() {
   return (
     <main className="login-page">
       <div className="login-card">
@@ -12,14 +12,14 @@ function LoginPage() {
           <p>Discover events you'll love.</p>
         </div>
 
-        <LoginForm />
+        <RegisterForm />
 
         <p className="signup-text">
-          Don't have an account? <Link to="/register">Sign up</Link>
+          Already have an account? <Link to="/login">Log in</Link>
         </p>
       </div>
     </main>
   );
 }
 
-export default LoginPage;
+export default RegisterPage;
