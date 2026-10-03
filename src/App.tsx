@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import LoginPage from "./pages/login/LoginPage";
-import HomePage from "./pages/login/HomePage";
+import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/login/RegisterPage";
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({
